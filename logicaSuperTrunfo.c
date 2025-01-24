@@ -39,70 +39,91 @@ int main() {
     // Exemplo:
     // printf("A cidade vencedora é: %s\n", cidadeVencedora);
 
-float populacao;
-float area;
-float PIB;
+float populacao1;
+float populacao2;
+float area1;
+float area2;
+float PIB1;
+float PIB2;
 int pontos;
-char Cidade [20];
 
 
-printf("\n\nS u p er  -  t r u n fo - LÓGICA! \n"); // tema do jogo
-printf("--------------------------------\n");
-printf("\nA01 - BRASIL \n\n"); // título
+printf("\n\nS u p e r  -  t r u n fo -  COMPARATIVO DE CARTAS ! \n"); // tema do jogo
+printf("----------------------------------------\n");
+printf("\nPAÍS BRASIL \n\n"); // título
+printf("A01\n");
 
-          printf("ESTADO -CEARA\n\n"); // subtítulo Enfatizando o estado
-
-        printf("Digite a cidade: \n"); // digite a cidade
-        scanf("%s", &Cidade); // armazenando os dados digitados pelo o úsuario
-            printf("Digite a população:  \n");
-            scanf("%f", &populacao); //armazenando os dados digitados pelo o úsuario
+      printf("ESTADO -CEARA\n"); // subtítulo Enfatizando o estado
+        printf("CIDADE : FORTALEZA: \n");
+            printf("\nDigite a população:  \n");
+            scanf("%f", &populacao1); //armazenando os dados digitados pelo o úsuario
               printf("Digite a area em (km2): \n");
-              scanf("%f", &area); //armazenando os dados digitados pelo o úsuario
+              scanf("%f", &area1); //armazenando os dados digitados pelo o úsuario
                 printf("Digite o PIB: \n");
-                scanf("%f", &PIB); //armazenando os dados digitados pelo o úsuario
+                scanf("%f", &PIB1); //armazenando os dados digitados pelo o úsuario
                   printf("Digite a quantidade de pontos turisticos: \n");
                   scanf("%d", &pontos); //armazenando os dados digitados pelo o úsuario
-printf("----------------------------------------------\n"); 
+printf("- - - \n"); 
 printf("\nPaís BRASIL!!"); //apresentação na tela para o usuário.
 printf("\n\nCOD-A01 - ( ESTADO DO CEARA )\n"); //apresentação na tela para o usuário.
-printf("Cidade: %s\n", Cidade); //apresentação na tela para o usuário.
-printf("\nPopulação é: %.3f de habitantes\n", populacao); //apresentação na tela para o usuário.
-printf("Area total em (km2) é de: %.3f\n", area); //apresentação na tela para o usuário.
-printf("O PIB é de: R$:%.2f de reais\n", PIB); //apresentação na tela para o usuário.
-printf("Pontos turisticos: %d\n\n\n", pontos); ////apresentação na tela para o usuário
+printf("- CIDADE : FORTALEZA: \n"); //apresentação na tela para o usuário.
+printf("\n- População é: %.3f de habitantes\n", populacao1); //apresentação na tela para o usuário.
+printf("- Area total em (km2) é de: %.3f\n", area1); //apresentação na tela para o usuário.
+printf("- O PIB é de: R$:%.2f de reais\n", PIB1); //apresentação na tela para o usuário.
+printf("- Pontos turisticos: %d\n\n\n", pontos); ////apresentação na tela para o usuário
 
                                        // fim do bloco de cadastro primeira CARTA 01
 
 printf("--------------------------------\n");
-printf("\nA02 - BRASIL \n\n"); // título
-
-          printf("ESTADO - SÃO PAULO\n\n"); // subtítulo enfatizando o estado (para experiência do usário na tela)
-
-        printf("Digite a cidade: \n"); // digite a cidade
-        scanf("%s", &Cidade); // armazenando os dados digitados pelo o úsuario
-            printf("Digite a população:  \n");
-            scanf("%f", &populacao); // armazenando os dados digitados pelo o úsuario
+printf("\nPAÍS- BRASIL \n\n"); // título
+      printf("A02\n");
+        printf("ESTADO - SÃO PAULO\n"); // subtítulo enfatizando o estado (para experiência do usário na tela)
+          printf("CIDADE: GUARULHOS: \n");
+            printf("\nDigite a população:  \n");
+            scanf("%f", &populacao2); // armazenando os dados digitados pelo o úsuario
               printf("Digite a area em (km2): \n");
-              scanf("%f", &area); // armazenando os dados digitados pelo o úsuario
+              scanf("%f", &area2); // armazenando os dados digitados pelo o úsuario
                 printf("Digite o PIB: \n");
-                scanf("%f", &PIB); // armazenando os dados digitados pelo o úsuario
+                scanf("%f", &PIB2); // armazenando os dados digitados pelo o úsuario
                   printf("Digite a quantidade de pontos turisticos: \n");
                   scanf("%d", &pontos); // armazenando os dados digitados pelo o úsuario
-printf("----------------------------------------------\n");
+printf("- - - \n");
 printf("\nPaís BRASIL!!"); //apresentação na tela para o usuário.
 printf("\n\nA02 - ( SÃO PAULO )\n"); //apresentação na tela para o usuário.
-printf("Cidade:%s \n", Cidade); //apresentação na tela para o usuário.
-printf("População é: %.3f de habitantes\n", populacao); //apresentação na tela para o usuário.
-printf("Area total em (km2) é de: %.3f\n", area); ///apresentação na tela para o usuário.
-printf("O PIB é de: R$:%.2f de reais\n", PIB); //apresentação na tela para o usuário.
-printf("Pontos turisticos: %d\n\n\n", pontos); //apresentação na tela para o usuário.
+ printf(" CIDADE: GUARULHOS: \n"); //apresentação na tela para o usuário.
+printf("\n-População é: %.3f de habitantes\n", populacao2); //apresentação na tela para o usuário.
+printf("- Area total em (km2) é de: %.3f\n", area2); ///apresentação na tela para o usuário.
+printf("- O PIB é de: R$:%.2f de reais\n", PIB2); //apresentação na tela para o usuário.
+printf("- Pontos turisticos: %d\n\n\n", pontos); //apresentação na tela para o usuário.
 
                                               // fim do bloco de cadastro primeira CARTA 02
 
 printf("\n\n----------------------------------------------\n\n");
-printf("A CARTA VECEDORA É: \n");
+printf("A CARTA VECEDORA DE MAIOR POPULAÇÃO É: \n");
 
+if (populacao1 >= populacao2){
+   printf("O Estado do Ceara representado pela Cidade de Fortaleza");
+   } else {
+  printf(" O Estado de São Paulo, representado por Guarulhos\n");
+   }
 
+printf("A CARTA VECEDORA DE MAIOR ARRECADAÇÃO PIB: \n");
+if(PIB1 >= PIB2){
+ printf("O Estado do Ceara representado pela Cidade de Fortaleza");
+}else {
+  printf(" O Estado de São Paulo, representado por Guarulhos\n");
+   }
 
-    return 0;
+printf("A CARTA VECEDORA DE MENOR AREA TERRITORIAL EM (KM2): \n");
+if(area1 <= area2){
+ printf("O Estado do Ceara representado pela Cidade de Fortaleza");
+}else {
+  printf(" O Estado de São Paulo, representado por Guarulhos\n\n");
+   }
+
+printf("\n\nParabens\n\n");
+
+return 0;
 }
+    
+
