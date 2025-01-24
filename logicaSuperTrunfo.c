@@ -48,7 +48,7 @@ float PIB2;
 int pontos;
 
 
-printf("\n\nS u p e r  -  t r u n fo -  COMPARATIVO DE CARTAS ! \n"); // tema do jogo
+printf("\n\nS u p e r  -  t r u n f o -  COMPARATIVO DE CARTAS ! \n"); // tema do jogo
 printf("----------------------------------------\n");
 printf("\nPAÍS BRASIL \n\n"); // título
 printf("A01\n");
@@ -99,29 +99,32 @@ printf("- Pontos turisticos: %d\n\n\n", pontos); //apresentação na tela para o
                                               // fim do bloco de cadastro primeira CARTA 02
 
 printf("\n\n----------------------------------------------\n\n");
-printf("A CARTA VECEDORA DE MAIOR POPULAÇÃO É: \n");
 
-if (populacao1 >= populacao2){
-   printf("O Estado do Ceara representado pela Cidade de Fortaleza");
-   } else {
-  printf(" O Estado de São Paulo, representado por Guarulhos\n");
+printf (" APURAÇÃO DO RESULTADO :) \n\n"); //titulo que aparecera na tela do usuário
+
+printf("\n\nA CARTA VECEDORA DE MAIOR POPULAÇÃO É: \n"); 
+
+if (populacao1 >= populacao2){  // TESTE, se a população da cidade 1 é maior que a cidade 2.
+   printf("-O Estado do Ceara representado pela Cidade de Fortaleza\n\n"); // se a resposta for SIM, exiba esse texto para o usuário
+   } else {  // caso não, 
+  printf(" -O Estado de São Paulo, representado por Guarulhos\n"); // exiba esse texto para o usuário
    }
 
-printf("A CARTA VECEDORA DE MAIOR ARRECADAÇÃO PIB: \n");
-if(PIB1 >= PIB2){
- printf("O Estado do Ceara representado pela Cidade de Fortaleza");
-}else {
-  printf(" O Estado de São Paulo, representado por Guarulhos\n");
+printf("\n\nA CARTA VECEDORA DE MAIOR ARRECADAÇÃO PIB: \n");
+if(PIB1 >= PIB2){  // TESTE, se o PIB da cidade 1 é maior que a cidade 2.
+ printf("-O Estado do Ceara representado pela Cidade de Fortaleza\n"); // se a resposta for SIM, exiba esse texto para o usuário
+}else { // caso não, 
+  printf("-O Estado de São Paulo, representado por Guarulhos\n"); // exiba esse texto para o usuário
    }
 
-printf("A CARTA VECEDORA DE MENOR AREA TERRITORIAL EM (KM2): \n");
-if(area1 <= area2){
- printf("O Estado do Ceara representado pela Cidade de Fortaleza");
-}else {
-  printf(" O Estado de São Paulo, representado por Guarulhos\n\n");
+printf("\n\nA CARTA VECEDORA DE MENOR AREA TERRITORIAL EM (KM2): \n");
+if(area1 <= area2){  // TESTE, se a area da cidade 1 é menor que a cidade 2.
+ printf("-O Estado do Ceara representado pela Cidade de Fortaleza"); // se a resposta for SIM, exiba esse texto para o usuário
+}else { // caso não, 
+  printf("-O Estado de São Paulo, representado por Guarulhos\n\n"); // exiba esse texto para o usuário
    }
 
-printf("\n\nParabens\n\n");
+printf("\n\nParabéns\n\n"); //imprime para o usuário.
 
 return 0;
 }
